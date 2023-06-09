@@ -16,7 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <img src="expense-tracker-frontend/src/assets/1-readme.webp" width="650" height="350"/>
 
-## Spring MVC, Spring Boot, Spring data JPA, MySQL database
+## Spring MVC, Spring Boot, Spring data JPA, MySQL
 
 <img src="expensetracker/src/main/resources/static/RequestLifecycle.png" width="800" height="520"/>
 
