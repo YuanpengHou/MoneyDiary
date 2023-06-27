@@ -37,7 +37,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <img src="expense-tracker-frontend/src/assets/1-readme.webp" width="600" height="300"/>
 
-## Spring MVC, Spring Boot, Spring data JPA, MySQL
+## Spring MVC
 
 The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.
 
@@ -49,7 +49,7 @@ Spring Web MVC - the Spring Web MVC framework provides Model-View-Controller (MV
 
 - The Controller is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.
 
-<img src="expensetracker/src/main/resources/static/RequestLifecycle.png" width="700"/>
+<img src="expensetracker/src/main/resources/static/RequestLifecycle.png" width="600"/>
 
  - DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and responses.
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
@@ -59,7 +59,7 @@ Following is the sequence of events corresponding to an incoming HTTP request to
 3. The DispatcherServlet will take help from ViewResolver to pickup the defined view for the request.
 4. Once view is finalized, The DispatcherServlet passes the model data to the view which is finally rendered on the browser.
 
-<img src="expense-tracker-frontend/src/assets/spring_dispatcherservlet.png" width="500"/>
+<img src="expense-tracker-frontend/src/assets/spring_dispatcherservlet.png" width="400"/>
 
 All the above-mentioned components, i.e. HandlerMapping, Controller, and ViewResolver are parts of WebApplicationContext which is an extension of the plainApplicationContext with some extra features necessary for web applications
 
@@ -84,11 +84,11 @@ Why should we use Spring Boot Framework?
 
 Implementing a data access layer of an application has been cumbersome for quite a while. Too much boilerplate code has to be written to execute simple queries as well as perform pagination, and auditing. Spring Data JPA aims to significantly improve the implementation of data access layers by reducing the effort to the amount that’s actually needed. As a developer you write your repository interfaces, including custom finder methods, and Spring will provide the implementation automatically.
 
-<img src="expense-tracker-frontend/src/assets/JPA.png" width="500"/>
+<img src="expense-tracker-frontend/src/assets/JPA.png" width="550"/>
 
 - MySQL - is the world’s most popular open source database. According to DB-Engines, MySQL ranks as the second-most-popular database, behind Oracle Database. MySQL powers many of the most accessed applications, including Facebook, Twitter, Netflix, Uber, Airbnb, Shopify, and Booking.com.
 
-<img src="expense-tracker-frontend/src/assets/mysql.avif" width="500"/>
+<img src="expense-tracker-frontend/src/assets/mysql.avif" width="600" height="200"/>
 
 
 
