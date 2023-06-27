@@ -18,9 +18,9 @@ A suite of developer tools to help you develop, build, test, and update your cod
 With Angular, you're taking advantage of a platform that can scale from single-developer projects to enterprise-level applications. Angular is designed to make updating as straightforward as possible, so take advantage of the latest developments with minimal effort. Best of all, the Angular ecosystem consists of a diverse group of over 1.7 million developers, library authors, and content creators.
 
 - Components - components are the building blocks that compose an application. A component includes a TypeScript class with a @Component() decorator, an HTML template, and styles. The @Component() decorator specifies the following Angular-specific information:
-1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
-2. An HTML template that instructs Angular how to render the component
-3. An optional set of CSS styles that define the appearance of the template's HTML elements
+ 1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
+ 2. An HTML template that instructs Angular how to render the component
+ 3. An optional set of CSS styles that define the appearance of the template's HTML elements
 
 - Templates - every component has an HTML template that declares how that component renders. You define this template either inline or by file path.
 Angular adds syntax elements that extend HTML so you can insert dynamic values from your component. Angular automatically updates the rendered DOM when your component's state changes.
