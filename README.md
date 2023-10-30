@@ -39,9 +39,13 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Spring MVC
 
+**Spring**
+
 The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.
 
-Spring Web MVC - the Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.
+**Spring Web MVC**
+
+The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.
 
 - The Model encapsulates the application data and in general they will consist of POJO.
 
@@ -51,7 +55,7 @@ Spring Web MVC - the Spring Web MVC framework provides Model-View-Controller (MV
 
 <img src="expensetracker/src/main/resources/static/RequestLifecycle.png" width="600"/>
 
- - DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and responses.
+- DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and responses.
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
 
 1. After receiving an HTTP request, DispatcherServlet consults the HandlerMapping to call the appropriate Controller.
@@ -71,7 +75,7 @@ Spring Boot is a project that is built on the top of the Spring Framework. It pr
 - In Spring Boot, there is no requirement for XML configuration (deployment descriptor). It uses convention over configuration software design paradigm that means it - decreases the effort of the developer.
 - We can use Spring STS IDE or Spring Initializr to develop Spring Boot Java applications.
   
-Why should we use Spring Boot Framework?
+**Why should we use Spring Boot Framework?**
 
 - The dependency injection approach is used in Spring Boot.
 - It contains powerful database transaction management capabilities.
@@ -80,11 +84,11 @@ Why should we use Spring Boot Framework?
 
 ## Spring Data JPA & Hibernate
 
-What is Java Persistence API?
+**What is Java Persistence API?**
 
 JPA stands for Jakarta Persistence API (JPA), formerly known as Java Persistence API. JPA is just a specification that facilitates object-relational mapping to manage relational data in Java applications. It provides a platform to work directly with objects instead of using SQL statements.
 
-What is Spring Data JPA?
+**What is Spring Data JPA?**
 
 Spring Data JPA is part of Spring Data family. Spring Data makes it easier to create Spring driven applications that use new ways to access data, such as non-relational databases, map-reduction frameworks, cloud services, as well as well-advanced relational database support. Spring Data JPA - part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. This module deals with enhanced support for JPA based data access layers. It makes it easier to build Spring-powered applications that use data access technologies. 
 
@@ -92,7 +96,7 @@ Spring Data JPA is part of Spring Data family. Spring Data makes it easier to cr
 - Spring Data JPA is not a JPA provider. It is a library/framework that adds an extra layer of abstraction on top of our JPA provider (like Hibernate). Spring Data JPA always requires the JPA provider such as Hibernate or Eclipse Link.
 - Spring Data JPA uses Hibernate as a default JPA provider. Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
 
-What is Hibernate Framework?
+**What is Hibernate Framework?**
 
 Hibernate is an object-relational mapping solution for Java environments. Object-relational mapping or ORM is the programming technique to map application domain model objects to the relational database tables. 
 Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
@@ -103,18 +107,20 @@ Hibernate provides a reference implementation of the Java Persistence API that m
 
 MySQL is the world’s most popular open source database. According to DB-Engines, MySQL ranks as the second-most-popular database, behind Oracle Database. MySQL powers many of the most accessed applications, including Facebook, Twitter, Netflix, Uber, Airbnb, Shopify, and Booking.com. MySQL is a relational database management system Databases are the essential data repository for all software applications. For example, whenever someone conducts a web search, logs in to an account, or completes a transaction, a database system is storing the information so it can be accessed in the future.
 
-Database
+**Database**
 
 Aa database is a structured collection of data organized and stored in tables. It serves as a central repository where information is efficiently managed, allowing users to store, retrieve, update, and delete data. MySQL provides the software framework to create, maintain, and interact with these databases, making data storage and retrieval seamless and reliable.
 
-Relational Database
+**Relational Database**
 
 A relational database stores data in separate tables rather than putting all the data in one big storeroom. The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data tables, views, rows, and columns, offers a flexible programming environment. You set up rules governing the relationships between different data fields, such as one to one, one to many, unique, required, or optional, and “pointers” between different tables. The database enforces these rules so that with a well-designed database your application never sees data that’s inconsistent, duplicated, orphaned, out of date, or missing.
 
-SQL
+**SQL**
+
 Structured query language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values. You can use SQL statements to store, update, remove, search, and retrieve information from the database. You can also use SQL to maintain and optimize database performance.
 
-How Does MySQL Work?
+**How Does MySQL Work?**
+
 The basic structure of the client-server structure involves one or more devices connected to a server through a specific network. Every client can make a request from the graphical user interface (GUI) on their screens, and the server will produce the desired output, as long as both ends understand the instruction. Without getting too technical, the main processes taking place in a MySQL environment are the same, which are:
 
 1. MySQL creates a database for storing and manipulating data, defining the relationship of each table.
