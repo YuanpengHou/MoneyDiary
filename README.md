@@ -17,6 +17,8 @@ A collection of well-integrated libraries that cover a wide variety of features,
 A suite of developer tools to help you develop, build, test, and update your code
 With Angular, you're taking advantage of a platform that can scale from single-developer projects to enterprise-level applications. Angular is designed to make updating as straightforward as possible, so take advantage of the latest developments with minimal effort. Best of all, the Angular ecosystem consists of a diverse group of over 1.7 million developers, library authors, and content creators.
 
+<img src="expense-tracker-frontend/src/assets/0-readme.webp" width="750" height="450"/>
+
 - Components - components are the building blocks that compose an application. A component includes a TypeScript class with a @Component() decorator, an HTML template, and styles. The @Component() decorator specifies the following Angular-specific information:
  1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
  2. An HTML template that instructs Angular how to render the component
@@ -32,8 +34,6 @@ Angular adds syntax elements that extend HTML so you can insert dynamic values f
 - Angular CLI - the Angular CLI is the fastest, straightforward, and recommended way to develop Angular applications. The Angular CLI makes some tasks trouble-free. For example commands : ng build, ng serve, ng generate, ng test, ...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
-
-<img src="expense-tracker-frontend/src/assets/0-readme.webp" width="750" height="450"/>
 
 <img src="expense-tracker-frontend/src/assets/1-readme.webp" width="600" height="300"/>
 
