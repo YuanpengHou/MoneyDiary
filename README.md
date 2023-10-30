@@ -78,15 +78,51 @@ Why should we use Spring Boot Framework?
 - It simplifies integration with other Java frameworks like JPA/Hibernate ORM, Struts, etc.
 - It reduces the cost and development time of the application.
 
-## Spring data JPA & MySQL
+## Spring Data JPA & Hibernate
 
- - Spring Data JPA - part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. This module deals with enhanced support for JPA based data access layers. It makes it easier to build Spring-powered applications that use data access technologies.
+What is Java Persistence API?
 
-Implementing a data access layer of an application has been cumbersome for quite a while. Too much boilerplate code has to be written to execute simple queries as well as perform pagination, and auditing. Spring Data JPA aims to significantly improve the implementation of data access layers by reducing the effort to the amount that’s actually needed. As a developer you write your repository interfaces, including custom finder methods, and Spring will provide the implementation automatically.
+JPA stands for Jakarta Persistence API (JPA), formerly known as Java Persistence API. JPA is just a specification that facilitates object-relational mapping to manage relational data in Java applications. It provides a platform to work directly with objects instead of using SQL statements.
+
+What is Spring Data JPA?
+
+Spring Data JPA is part of Spring Data family. Spring Data makes it easier to create Spring driven applications that use new ways to access data, such as non-relational databases, map-reduction frameworks, cloud services, as well as well-advanced relational database support. Spring Data JPA - part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. This module deals with enhanced support for JPA based data access layers. It makes it easier to build Spring-powered applications that use data access technologies. 
+
+- We can use Spring Data JPA to reduce the amount of boilerplate code required to implement the data access object (DAO) layer.
+- Spring Data JPA is not a JPA provider. It is a library/framework that adds an extra layer of abstraction on top of our JPA provider (like Hibernate). Spring Data JPA always requires the JPA provider such as Hibernate or Eclipse Link.
+- Spring Data JPA uses Hibernate as a default JPA provider. Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
+
+What is Hibernate Framework?
+
+Hibernate is an object-relational mapping solution for Java environments. Object-relational mapping or ORM is the programming technique to map application domain model objects to the relational database tables. 
+Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
 
 <img src="expense-tracker-frontend/src/assets/JPA.png" width="550"/>
 
-- MySQL - is the world’s most popular open source database. According to DB-Engines, MySQL ranks as the second-most-popular database, behind Oracle Database. MySQL powers many of the most accessed applications, including Facebook, Twitter, Netflix, Uber, Airbnb, Shopify, and Booking.com.
+## MySQL & SQL
+
+MySQL is the world’s most popular open source database. According to DB-Engines, MySQL ranks as the second-most-popular database, behind Oracle Database. MySQL powers many of the most accessed applications, including Facebook, Twitter, Netflix, Uber, Airbnb, Shopify, and Booking.com. MySQL is a relational database management system Databases are the essential data repository for all software applications. For example, whenever someone conducts a web search, logs in to an account, or completes a transaction, a database system is storing the information so it can be accessed in the future.
+
+Database
+
+Aa database is a structured collection of data organized and stored in tables. It serves as a central repository where information is efficiently managed, allowing users to store, retrieve, update, and delete data. MySQL provides the software framework to create, maintain, and interact with these databases, making data storage and retrieval seamless and reliable.
+
+Relational Database
+
+A relational database stores data in separate tables rather than putting all the data in one big storeroom. The database structure is organized into physical files optimized for speed. The logical data model, with objects such as data tables, views, rows, and columns, offers a flexible programming environment. You set up rules governing the relationships between different data fields, such as one to one, one to many, unique, required, or optional, and “pointers” between different tables. The database enforces these rules so that with a well-designed database your application never sees data that’s inconsistent, duplicated, orphaned, out of date, or missing.
+
+SQL
+Structured query language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values. You can use SQL statements to store, update, remove, search, and retrieve information from the database. You can also use SQL to maintain and optimize database performance.
+
+How Does MySQL Work?
+The basic structure of the client-server structure involves one or more devices connected to a server through a specific network. Every client can make a request from the graphical user interface (GUI) on their screens, and the server will produce the desired output, as long as both ends understand the instruction. Without getting too technical, the main processes taking place in a MySQL environment are the same, which are:
+
+1. MySQL creates a database for storing and manipulating data, defining the relationship of each table.
+2. Clients can make requests by typing specific SQL statements on MySQL.
+3. The server application will respond with the requested information, and it will appear on the client’s side.
+From the client’s side, they usually emphasize which MySQL GUI to use. The lighter and more user-friendly the GUI is, the faster and easier their data management activities will be.
+
+Some of the most popular MySQL GUIs are MySQL WorkBench, SequelPro, DBVisualizer, and the Navicat DB Admin Tool. Some of them are free, while some are commercial, some run exclusively for macOS, and some are compatible with major operating systems. Clients should choose the GUI depending on their needs. For web database management, including a WordPress site, the most obvious go-to is phpMyAdmin.
 
 <img src="expense-tracker-frontend/src/assets/mysql.avif" width="1000" height="170"/>
 
