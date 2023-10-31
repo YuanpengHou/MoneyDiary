@@ -131,7 +131,7 @@ From the client’s side, they usually emphasize which MySQL GUI to use. The lig
 
 Some of the most popular MySQL GUIs are MySQL WorkBench, SequelPro, DBVisualizer, and the Navicat DB Admin Tool. Some of them are free, while some are commercial, some run exclusively for macOS, and some are compatible with major operating systems. Clients should choose the GUI depending on their needs. For web database management, including a WordPress site, the most obvious go-to is phpMyAdmin.
 
-<img src="expense-tracker-frontend/src/assets/mysql.avif" width="1000" height="170"/>
+<img src="expense-tracker-frontend/src/assets/mysql.avif" width="1000" height="210"/>
 
 
 # Angular 9, Spring boot and MySQL Web Applicaton - Expense Tracker
