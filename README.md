@@ -53,7 +53,7 @@ The Spring Web MVC framework provides Model-View-Controller (MVC) architecture a
 
 - The Controller is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.
 
-<img src="expensetracker/src/main/resources/static/RequestLifecycle.png" width="600"/>
+<img src="expense-tracker-frontend/src/assets/image.png" width="600"/>
 
 - DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and responses.
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
@@ -74,7 +74,8 @@ Spring Boot is a project that is built on the top of the Spring Framework. It pr
 - In short, Spring Boot is the combination of Spring Framework and Embedded Servers.
 - In Spring Boot, there is no requirement for XML configuration (deployment descriptor). It uses convention over configuration software design paradigm that means it - decreases the effort of the developer.
 - We can use Spring STS IDE or Spring Initializr to develop Spring Boot Java applications.
-<img src="expense-tracker-frontend/src/assets/image.png" width="700" height="300"/>
+<img src="expense-tracker-frontend/src/assets/springboot_figure.png" width="700" height="300"/>
+
 **Why should we use Spring Boot Framework?**
 
 - The dependency injection approach is used in Spring Boot.
