@@ -46,7 +46,6 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 The class HttpClient Performs HTTP ***requests***. This service is available as an injectable class, with methods to perform HTTP requests. Each request method has multiple signatures, and the return type varies based on the signature that is called (mainly the values of observe and responseType).
 
 
-
 ## Spring MVC
 
 **Spring**
@@ -69,7 +68,8 @@ The Spring Web MVC framework provides Model-View-Controller (MVC) architecture a
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
 
 1. After receiving an HTTP request, DispatcherServlet consults the HandlerMapping to call the appropriate Controller.
-2. The Controller takes the request and calls the appropriate service methods based on used GET or POST method. The service method will set model data based on defined business logic and returns view name to the DispatcherServlet.
+2. The Controller takes the request and calls the appropriate service methods based on used GET or POST method. The service method will set model data based on defined business logic and returns view name to the 
+DispatcherServlet.
 3. The DispatcherServlet will take help from ViewResolver to pickup the defined view for the request.
 4. Once view is finalized, The DispatcherServlet passes the model data to the view which is finally rendered on the browser.
 
@@ -80,19 +80,24 @@ All the above-mentioned components, i.e. HandlerMapping, Controller, and ViewRes
 ## Spring Boot
 
 In Simple Terminology, Spring Boot is nothing but existing Spring Framework + Some Embedded HTTP Servers (Tomcat/Jetty etc.) - XML or Annotations Configurations. Here minus means we don’t need to write any XML Configuration and few Annotations only.
+
 The main goal of Spring Boot Framework is to reduce Development, Unit Test and Integration Test time and to ease the development of Production ready web applications very easily compared to existing Spring Framework, which really takes more time.
+
+<img src="expense-tracker-frontend/src/assets/springboot_com.png" height="100"/>
 
 Why Spring Boot?
 
 - To ease the Java-based applications Development, Unit Test and Integration Test Process.
 - To reduce Development, Unit Test and Integration Test time by providing some defaults.
 - To increase Productivity.
-- To avoid XML Configuration completely
-- To avoid defining more Annotation Configuration(It combined some existing Spring Framework Annotations to a simple and single Annotation)
+- To avoid XML Configuration completely.
+- To avoid defining more Annotation Configuration(It combined some existing Spring Framework Annotations to a simple and single Annotation).
 - To avoid writing lots of import statements
 - To provide some defaults to quick start new projects within no time.
 - To provide Opinionated Development approach.
 - By providing or avoiding these things, Spring Boot Framework reduces Development time, Developer Effort and increases productivity.
+
+<img src="expense-tracker-frontend/src/assets/springboot_figure.png" width="700" height="300"/>
 
 Advantages of Spring Boot:
 
@@ -100,16 +105,11 @@ Advantages of Spring Boot:
 - It reduces lots of development time and increases productivity.
 - It avoids writing lots of boilerplate Code, Annotations and XML Configuration.
 - It is very easy to integrate Spring Boot Application with its Spring Ecosystem like Spring JDBC, Spring ORM, Spring Data, Spring Security etc.
-- It follows “Opinionated Defaults Configuration” Approach to reduce Developer effort
+- It follows “Opinionated Defaults Configuration” Approach to reduce Developer effort.
 - It provides Embedded HTTP servers like Tomcat, Jetty etc. to develop and test our web applications very easily.
 - It provides CLI (Command Line Interface) tool to develop and test Spring Boot(Java or Groovy) Applications from command prompt very easily and quickly.
-- It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle
+- It provides lots of plugins to develop and test Spring Boot Applications very easily using Build Tools like Maven and Gradle.
 - It provides lots of plugins to work with embedded and in-memory Databases very easily.
-
-<img src="expense-tracker-frontend/src/assets/springboot_figure.png" width="700" height="300"/>
-
-**Why should we use Spring Boot Framework?**
-
 
 ## Spring Data JPA & Hibernate
 
