@@ -40,6 +40,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <img src="expense-tracker-frontend/src/assets/1-readme.webp" width="600" height="300"/>
 
 **@angular/common/http**
+
 **HttpClient**
 
 Performs HTTP requests. This service is available as an injectable class, with methods to perform HTTP requests. Each request method has multiple signatures, and the return type varies based on the signature that is called (mainly the values of observe and responseType).
