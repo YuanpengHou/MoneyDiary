@@ -43,7 +43,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 **class HttpClient**
 
-The class HttpClient Performs HTTP **requests**. This service is available as an injectable class, with methods to perform HTTP requests. Each request method has multiple signatures, and the return type varies based on the signature that is called (mainly the values of observe and responseType).
+The class HttpClient Performs HTTP ***requests***. This service is available as an injectable class, with methods to perform HTTP requests. Each request method has multiple signatures, and the return type varies based on the signature that is called (mainly the values of observe and responseType).
 
 
 
@@ -65,7 +65,7 @@ The Spring Web MVC framework provides Model-View-Controller (MVC) architecture a
 
 <img src="expense-tracker-frontend/src/assets/image.png" width="600"/>
 
-- DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and **responses**.
+- DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and ***responses***.
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
 
 1. After receiving an HTTP request, DispatcherServlet consults the HandlerMapping to call the appropriate Controller.
