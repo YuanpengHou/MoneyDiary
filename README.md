@@ -8,6 +8,8 @@ A Spring and Angular based Expense Tracker Web App
 
 **Backend**: Spring MVC, Spring Boot, Spring data JPA, MySQL database, Maven
 
+<img src="expense-tracker-frontend/src/assets/angular-springboot-mysql.png" width="600" height="450"/>
+
 ## Angular
 
 Angular is a development platform, built on TypeScript. As a platform, Angular includes:
