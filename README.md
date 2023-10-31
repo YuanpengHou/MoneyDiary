@@ -6,7 +6,7 @@ A Spring and Angular based Expense Tracker Web App
 
 **Frontend**: Angular, npm, TypeScript, Boostrap
 
-**Backend**: Spring MVC, Spring Boot, Spring data JPA, MySQL database, Maven, JUnit
+**Backend**: Spring MVC, Spring Boot, Spring data JPA, MySQL, JUnit
 
 <img src="expense-tracker-frontend/src/assets/angular-springboot-mysql.png" width="600" height="450"/>
 
