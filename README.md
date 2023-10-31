@@ -75,6 +75,8 @@ Spring Boot is a project that is built on the top of the Spring Framework. It pr
 - In Spring Boot, there is no requirement for XML configuration (deployment descriptor). It uses convention over configuration software design paradigm that means it - decreases the effort of the developer.
 - We can use Spring STS IDE or Spring Initializr to develop Spring Boot Java applications.
   
+<img src="expense-tracker-frontend/src/assets/image.png" width="400"/>
+ 
 **Why should we use Spring Boot Framework?**
 
 - The dependency injection approach is used in Spring Boot.
