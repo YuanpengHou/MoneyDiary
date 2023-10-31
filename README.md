@@ -22,9 +22,9 @@ With Angular, you're taking advantage of a platform that can scale from single-d
 <img src="expense-tracker-frontend/src/assets/0-readme.webp" width="750" height="450"/>
 
 - Components - components are the building blocks that compose an application. A component includes a TypeScript class with a @Component() decorator, an HTML template, and styles. The @Component() decorator specifies the following Angular-specific information:
- 1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
- 2. An HTML template that instructs Angular how to render the component
- 3. An optional set of CSS styles that define the appearance of the template's HTML elements
+  1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
+  2. An HTML template that instructs Angular how to render the component
+  3. An optional set of CSS styles that define the appearance of the template's HTML elements
 
 - Templates - every component has an HTML template that declares how that component renders. You define this template either inline or by file path.
 Angular adds syntax elements that extend HTML so you can insert dynamic values from your component. Angular automatically updates the rendered DOM when your component's state changes.
@@ -104,7 +104,7 @@ Spring Data JPA is part of Spring Data family. Spring Data makes it easier to cr
 Hibernate is an object-relational mapping solution for Java environments. Object-relational mapping or ORM is the programming technique to map application domain model objects to the relational database tables. 
 Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
 
-<img src="expense-tracker-frontend/src/assets/JPA.png" width="550"/>
+<img src="expense-tracker-frontend/src/assets/JPA.png" width="700"/>
 
 ## MySQL & SQL
 
