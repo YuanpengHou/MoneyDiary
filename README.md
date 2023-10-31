@@ -120,6 +120,8 @@ A relational database stores data in separate tables rather than putting all the
 
 Structured query language (SQL) is a programming language for storing and processing information in a relational database. A relational database stores information in tabular form, with rows and columns representing different data attributes and the various relationships between the data values. You can use SQL statements to store, update, remove, search, and retrieve information from the database. You can also use SQL to maintain and optimize database performance.
 
+<img src="expense-tracker-frontend/src/assets/sql_mindmap.png" width="600"/>
+
 **How Does MySQL Work?**
 
 The basic structure of the client-server structure involves one or more devices connected to a server through a specific network. Every client can make a request from the graphical user interface (GUI) on their screens, and the server will produce the desired output, as long as both ends understand the instruction. Without getting too technical, the main processes taking place in a MySQL environment are the same, which are:
