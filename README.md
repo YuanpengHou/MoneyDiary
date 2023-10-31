@@ -88,9 +88,9 @@ The main goal of Spring Boot Framework is to reduce Development, Unit Test, and 
 Why Spring Boot?
 
 - To ease and reduce Development, Unit Test, and Integration Test time by providing some defaults, increasing productivity.
-- To avoid defining more Annotation Configuration (It combined some existing Spring Framework Annotations to a simple and single Annotation).
+- It avoids writing lots of boilerplate Code, Annotations, and XML Configuration, like avoiding writing ServletConfig, SpringConfig, SpringMvcConfig, SpringJUnit4ClassRunner, JdbcConfig, SqlSessionFactoryBean, etc.
+- To avoid defining more Annotation Configuration (It combined some existing Spring Framework Annotations to a simple and single Annotation), like @RestController, @RestControllerAdvice, @SpringBootApplication = @EnableAutoConfiguration + @ComponentScan + @Configuration, etc.
 - To avoid writing lots of import statements.
-- It avoids writing lots of boilerplate Code, Annotations, and XML Configuration.
 - It is very easy to integrate Spring Boot Applications with its Spring Ecosystem like Spring JDBC, Spring ORM, Spring Data, Spring Security etc.
 - It follows “Opinionated Defaults Configuration”/"Convention over Configuration" Approach to reduce Developer effort, like using spring-boot-starter-web to make using web/MVC environment as a convention.
 - It provides Embedded HTTP servers like Tomcat, Jetty etc. to develop and test our web applications very easily. It provides easy maintenance and creation of REST endpoints.
