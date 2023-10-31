@@ -112,7 +112,7 @@ Spring JPA handle most of the work for us and we only need to define the interfa
 2. findById(ID id)
 3. findOne()
 4. findAll()
- ...
+5. ...
 
 **What is Hibernate Framework?**
 
