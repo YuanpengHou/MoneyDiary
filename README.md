@@ -68,7 +68,7 @@ The Spring Web MVC framework provides Model-View-Controller (MVC) architecture a
 Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and ***responses***.
 
 - DispatcherServlet: The front controller, is the core of the entire SpringMVC, which is responsible for coordinating the work of various components. It is responsible for receiving HTTP requests and entrusting them to components such as HandlerMapping, HandlerAdapter, and ViewResolver for processing.
-- Handler: Controller, completes specific business logic, equivalent to Servlet or Action.
+- Handler (Controller): completes specific business logic, equivalent to Servlet or Action.
 - HandlerMapping: Responsible for mapping requests to the corresponding Handler (Controller).
 - HandlerInterceptor: is an interface. If you need to complete some interception processing, you can implement this interface.
 - HandlerExecutionChain: HandlerExecutionChain includes two parts: Handler and HandlerInterceptor (the system will have a default HandlerInterceptor, if you need to set up additional interception, you can add an interceptor).
