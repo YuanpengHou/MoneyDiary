@@ -65,14 +65,29 @@ The Spring Web MVC framework provides Model-View-Controller (MVC) architecture a
 
 <img src="expense-tracker-frontend/src/assets/image.png" width="600"/>
 
-- DispatcherServlet - the Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and ***responses***.
+Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and ***responses***.
+
+- DispatcherServlet: The front controller, is the core of the entire SpringMVC, which is responsible for coordinating the work of various components. It is responsible for receiving HTTP requests and entrusting them to components such as HandlerMapping, HandlerAdapter, and ViewResolver for processing.
+- Handler: Controller, completes specific business logic, equivalent to Servlet or Action.
+- HandlerMapping: Responsible for mapping requests to the corresponding Handler (Controller).
+- HandlerInterceptor: is an interface. If you need to complete some interception processing, you can implement this interface.
+- HandlerExecutionChain: HandlerExecutionChain includes two parts: Handler and HandlerInterceptor (the system will have a default HandlerInterceptor, if you need to set up additional interception, you can add an interceptor).
+- HandlerAdapter: Responsible for calling Handler (Controller) methods and encapsulating the processing results, passing them to DispatcherServlet.
+- ModelAndView: Model data and view information, and it will be returned to DispatcherServlet as the processing result of Handler.
+- ViewResolver: View resolver, responsible for parsing out the corresponding View based on the view name, and finally responding to the client with the rendering result.
+
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
 
-1. After receiving an HTTP request, DispatcherServlet consults the HandlerMapping to call the appropriate Controller.
-2. The Controller takes the request and calls the appropriate service methods based on used GET or POST method. The service method will set model data based on defined business logic and returns view name to the 
-DispatcherServlet.
-3. The DispatcherServlet will take help from ViewResolver to pickup the defined view for the request.
-4. Once view is finalized, The DispatcherServlet passes the model data to the view which is finally rendered on the browser.
+1. The client sends an HTTP request to the front-end controller DispatcherServlet.
+2. DispatcherServlet, based on the request information, calls the HandlerMapping to resolve the handler (Controller) corresponding to the request.
+3. HandlerMapping searches for the corresponding Controller based on the request URL and generates the HandlerExecutionChain object (Interceptor + Handler(Controller)) to execute the request.
+4. DispatcherServlet calls HandlerAdapter to execute Handler. During execution, HandlerAdapter will pass the ModelAndView object to DispatcherServlet.
+5. After the Handler is executed, a ModelAndView object is returned to the HandlerAdapter.
+6. HandlerAdapter passes the ModelAndView object to DispatcherServlet.
+7. DispatcherServlet calls ViewResolver to resolve the view (View).
+8. After ViewResolver parses out the View object, it returns it (ModelAndView) to DispatcherServlet.
+9. DispatcherServlet calls the render() method of the View object to render the view.
+10. DispatcherServlet returns the rendered view to the client.
 
 <img src="expense-tracker-frontend/src/assets/spring_dispatcherservlet.png" width="400"/>
 
