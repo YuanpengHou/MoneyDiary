@@ -132,6 +132,7 @@ Spring Data JPA is part of Spring Data family. Spring Data makes it easier to cr
 - Spring Data JPA uses Hibernate as a default JPA provider. Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM (Object-Relational Mapping) tool with the benefits of loose coupling.
 
 Spring JPA handle most of the work for us and we only need to define the interface.  JpaRepository is a JPA (Java Persistence API) specific extension of Repository. It contains the full API of CrudRepository and PagingAndSortingRepository. So it contains API for basic CRUD operations and also API for pagination and sorting. The @Repository annotation helps Spring to bootstrap the JPA features during component scanning. The JpaRepository provide several OOTB methods to help us get started.
+
 1. S save(S entity)
 2. <S extends T> List<S> saveAll(Iterable<S> entities)
 3. T findById(ID id)
