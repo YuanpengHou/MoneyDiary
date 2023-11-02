@@ -129,14 +129,16 @@ Spring Data JPA is part of Spring Data family. Spring Data makes it easier to cr
 
 - We can use Spring Data JPA to reduce the amount of boilerplate code required to implement the data access object (DAO) layer.
 - Spring Data JPA is not a JPA provider. It is a library/framework that adds an extra layer of abstraction on top of our JPA provider (like Hibernate). Spring Data JPA always requires the JPA provider such as Hibernate or Eclipse Link.
-- Spring Data JPA uses Hibernate as a default JPA provider. Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
+- Spring Data JPA uses Hibernate as a default JPA provider. Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM (Object-Relational Mapping) tool with the benefits of loose coupling.
 
-Spring JPA handle most of the work for us and we only need to define the interface. The @Repository annotation helps Spring to bootstrap the JPA features during component scanning. The JpaRepository provide several OOTB methods to help us get started.
-1. save(S entity)
-2. findById(ID id)
-3. findOne()
-4. findAll()
-5. ...
+Spring JPA handle most of the work for us and we only need to define the interface.  JpaRepository is a JPA (Java Persistence API) specific extension of Repository. It contains the full API of CrudRepository and PagingAndSortingRepository. So it contains API for basic CRUD operations and also API for pagination and sorting. The @Repository annotation helps Spring to bootstrap the JPA features during component scanning. The JpaRepository provide several OOTB methods to help us get started.
+1. S save(S entity)
+2. <S extends T> List<S> saveAll(Iterable<S> entities)
+3. T findById(ID id)
+4. T findOne()
+5. <S extends T> List<S> findAll()
+6. void deleteAllInBatch(Iterable<T> entities)
+7. ...
 
 **What is Hibernate Framework?**
 
