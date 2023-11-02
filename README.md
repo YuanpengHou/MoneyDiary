@@ -10,7 +10,9 @@ A Spring and Angular based Expense Tracker Web App
 
 **Developer Tools**: IntelliJ IDEA, npm, Maven, AWS, Git/Github
 
+
 <img src="expense-tracker-frontend/src/assets/angular-springboot-mysql.png" width="600" height="450"/>
+
 
 ## Angular
 
