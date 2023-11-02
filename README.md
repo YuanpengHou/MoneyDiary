@@ -21,19 +21,19 @@ With Angular, you're taking advantage of a platform that can scale from single-d
 
 <img src="expense-tracker-frontend/src/assets/0-readme.webp" width="750" height="450"/>
 
-- Components - components are the building blocks that compose an application. A component includes a TypeScript class with a @Component() decorator, an HTML template, and styles. The @Component() decorator specifies the following Angular-specific information:
+- **Components** - components are the building blocks that compose an application. A component includes a TypeScript class with a @Component() decorator, an HTML template, and styles. The @Component() decorator specifies the following Angular-specific information:
   1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
   2. An HTML template that instructs Angular how to render the component
   3. An optional set of CSS styles that define the appearance of the template's HTML elements
 
-- Templates - every component has an HTML template that declares how that component renders. You define this template either inline or by file path.
+- **Templates** - every component has an HTML template that declares how that component renders. You define this template either inline or by file path.
 Angular adds syntax elements that extend HTML so you can insert dynamic values from your component. Angular automatically updates the rendered DOM when your component's state changes.
 
-- Dependency injection - dependency injection lets you declare the dependencies of your TypeScript classes without taking care of their instantiation. Instead, Angular handles the instantiation for you. This design pattern lets you write more testable and flexible code. Understanding dependency injection is not critical to start using Angular, but it is strongly recommended as a best practice. Many aspects of Angular take advantage of it to some degree.
+- **Dependency injection** - dependency injection lets you declare the dependencies of your TypeScript classes without taking care of their instantiation. Instead, Angular handles the instantiation for you. This design pattern lets you write more testable and flexible code. Understanding dependency injection is not critical to start using Angular, but it is strongly recommended as a best practice. Many aspects of Angular take advantage of it to some degree.
 
-- Directives - directives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.
+- **Directives** - directives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.
 
-- Angular CLI - the Angular CLI is the fastest, straightforward, and recommended way to develop Angular applications. The Angular CLI makes some tasks trouble-free. For example commands : ng build, ng serve, ng generate, ng test, ...
+- **Angular CLI** - the Angular CLI is the fastest, straightforward, and recommended way to develop Angular applications. The Angular CLI makes some tasks trouble-free. For example commands : ng build, ng serve, ng generate, ng test, ...
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
@@ -57,24 +57,26 @@ The Spring Framework provides a comprehensive programming and configuration mode
 
 The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and ready components that can be used to develop flexible and loosely coupled web applications. The MVC pattern results in separating the different aspects of the application (input logic, business logic, and UI logic), while providing a loose coupling between these elements.
 
-- The Model encapsulates the application data and in general they will consist of POJO.
+- The **Model** encapsulates the application data and in general they will consist of POJO.
 
-- The View is responsible for rendering the model data and in general it generates HTML output that the client's browser can interpret.
+- The **View** is responsible for rendering the model data and in general it generates HTML output that the client's browser can interpret.
 
-- The Controller is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.
+- The **Controller** is responsible for processing user requests and building an appropriate model and passes it to the view for rendering.
 
 <img src="expense-tracker-frontend/src/assets/image.png" width="600"/>
 
 Spring Web model-view-controller (MVC) framework is designed around a DispatcherServlet that handles all the HTTP requests and ***responses***.
 
-- DispatcherServlet: The front controller, is the core of the entire SpringMVC, which is responsible for coordinating the work of various components. It is responsible for receiving HTTP requests and entrusting them to components such as HandlerMapping, HandlerAdapter, and ViewResolver for processing.
-- Handler (Controller): completes specific business logic, equivalent to Servlet or Action.
-- HandlerMapping: Responsible for mapping requests to the corresponding Handler (Controller).
-- HandlerInterceptor: is an interface. If you need to complete some interception processing, you can implement this interface.
-- HandlerExecutionChain: HandlerExecutionChain includes two parts: Handler and HandlerInterceptor (the system will have a default HandlerInterceptor, if you need to set up additional interception, you can add an interceptor).
-- HandlerAdapter: Responsible for calling Handler (Controller) methods and encapsulating the processing results, passing them to DispatcherServlet.
-- ModelAndView: Model data and view information, and it will be returned to DispatcherServlet as the processing result of Handler.
-- ViewResolver: View resolver, responsible for parsing out the corresponding View based on the view name, and finally responding to the client with the rendering result.
+- **DispatcherServlet**: The front controller, is the core of the entire SpringMVC, which is responsible for coordinating the work of various components. It is responsible for receiving HTTP requests and entrusting them to components such as HandlerMapping, HandlerAdapter, and ViewResolver for processing.
+- **Handler (Controller)**: completes specific business logic, equivalent to Servlet or Action.
+- **HandlerMapping**: Responsible for mapping requests to the corresponding Handler (Controller).
+- **HandlerInterceptor**: is an interface. If you need to complete some interception processing, you can implement this interface.
+- **HandlerExecutionChain**: HandlerExecutionChain includes two parts: Handler and HandlerInterceptor (the system will have a default HandlerInterceptor, if you need to set up additional interception, you can add an interceptor).
+- **HandlerAdapter**: Responsible for calling Handler (Controller) methods and encapsulating the processing results, passing them to DispatcherServlet.
+- **ModelAndView**: Model data and view information, and it will be returned to DispatcherServlet as the processing result of Handler.
+- **HandlerExceptionResolver**: Any Spring bean declared in the DispatcherServlet's application context that implements HandlerExceptionResolver interface will be used to intercept and process any exception raised in the MVC system and not handled by a Controller. The handler refers to the controller that generated the exception (remember that @Controller instances are only one type of handler supported by Spring MVC). Behind the scenes, MVC creates three such resolvers by default: 1. ExceptionHandlerExceptionResolver matches uncaught exceptions against suitable @ExceptionHandler methods on both the handler (controller) and on any controller-advices. 2. ResponseStatusExceptionResolver looks for uncaught exceptions annotated by @ResponseStatus. 3. DefaultHandlerExceptionResolver converts standard Spring exceptions and converts them to HTTP Status Codes.
+- **ViewResolver**: View resolver, responsible for parsing out the corresponding View based on the view name, and finally responding to the client with the rendering result.
+
 
 Following is the sequence of events corresponding to an incoming HTTP request to DispatcherServlet −
 
@@ -84,10 +86,11 @@ Following is the sequence of events corresponding to an incoming HTTP request to
 4. DispatcherServlet calls HandlerAdapter to execute Handler. During execution, HandlerAdapter will pass the ModelAndView object to DispatcherServlet.
 5. After the Handler is executed, a ModelAndView object is returned to the HandlerAdapter.
 6. HandlerAdapter passes the ModelAndView object to DispatcherServlet.
-7. DispatcherServlet calls ViewResolver to resolve the view (View).
-8. After ViewResolver parses out the View object, it returns it (ModelAndView) to DispatcherServlet.
-9. DispatcherServlet calls the render() method of the View object to render the view.
-10. DispatcherServlet returns the rendered view to the client.
+7. Any exceptions that happened in steps 4- 6 will be processed by the HandlerExceptionResolver interface.
+8. DispatcherServlet calls ViewResolver to resolve the view (View).
+9. After ViewResolver parses out the View object, it returns it (ModelAndView) to DispatcherServlet.
+10. DispatcherServlet calls the render() method of the View object to render the view.
+11. DispatcherServlet returns the rendered view to the client.
 
 <img src="expense-tracker-frontend/src/assets/spring_dispatcherservlet.png" width="400"/>
 
@@ -119,11 +122,11 @@ Why Spring Boot?
 
 ## Spring Data JPA & Hibernate
 
-**What is Java Persistence API?**
+**Java Persistence API**
 
 JPA stands for Jakarta Persistence API (JPA), formerly known as Java Persistence API. JPA is just a specification that facilitates object-relational mapping to manage relational data in Java applications. It provides a platform to work directly with objects instead of using SQL statements.
 
-**What is Spring Data JPA?**
+**Spring Data JPA**
 
 Spring Data JPA is part of Spring Data family. Spring Data makes it easier to create Spring driven applications that use new ways to access data, such as non-relational databases, map-reduction frameworks, cloud services, as well as well-advanced relational database support. Spring Data JPA - part of the larger Spring Data family, makes it easy to easily implement JPA based repositories. This module deals with enhanced support for JPA based data access layers. It makes it easier to build Spring-powered applications that use data access technologies. 
 
@@ -141,7 +144,7 @@ Spring JPA handle most of the work for us and we only need to define the interfa
 6. deleteAllInBatch(entities)
 7. ...
 
-**What is Hibernate Framework?**
+**Hibernate**
 
 Hibernate is an object-relational mapping solution for Java environments. Object-relational mapping or ORM is the programming technique to map application domain model objects to the relational database tables. 
 Hibernate provides a reference implementation of the Java Persistence API that makes it a great choice as an ORM tool with the benefits of loose coupling.
