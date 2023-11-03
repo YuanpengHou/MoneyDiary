@@ -25,19 +25,108 @@ With Angular, you're taking advantage of a platform that can scale from single-d
 
 <img src="expense-tracker-frontend/src/assets/0-readme.webp" width="750" height="450"/>
 
-- **Components** - components are the building blocks that compose an application. A component includes a TypeScript class with a @Component() decorator, an HTML template, and styles. The @Component() decorator specifies the following Angular-specific information:
+**Components**
+Components are the building blocks that compose an application. A component includes a TypeScript class with a ```@Component()``` decorator, an HTML template, and styles. The ```@Component()``` decorator specifies the following Angular-specific information:
   1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
   2. An HTML template that instructs Angular how to render the component
   3. An optional set of CSS styles that define the appearance of the template's HTML elements
+  The following is a minimal Angular component.
+  ```
+  import { Component } from '@angular/core';
+  
+  @Component({
+    selector: 'hello-world',
+    template: `
+      <h2>Hello World</h2>
+      <p>This is my first component!</p>
+    `
+  })
+  export class HelloWorldComponent {
+    // The code in this class drives the component's behavior.
+  }
+  ```
+  To use this component, you write the following in a template:
+  ```
+  <hello-world></hello-world>
+  ```
+  When Angular renders this component, the resulting DOM looks like this:
+  ```
+  <hello-world>
+      <h2>Hello World</h2>
+      <p>This is my first component!</p>
+  </hello-world>
+  ```
+  Angular's component model offers strong encapsulation and an intuitive application structure. Components also make your application painless to unit test and can improve the general readability of your code.
 
-- **Templates** - every component has an HTML template that declares how that component renders. You define this template either inline or by file path.
-Angular adds syntax elements that extend HTML so you can insert dynamic values from your component. Angular automatically updates the rendered DOM when your component's state changes.
+**Templates**
 
-- **Dependency injection** - dependency injection lets you declare the dependencies of your TypeScript classes without taking care of their instantiation. Instead, Angular handles the instantiation for you. This design pattern lets you write more testable and flexible code. Understanding dependency injection is not critical to start using Angular, but it is strongly recommended as a best practice. Many aspects of Angular take advantage of it to some degree.
+Every component has an HTML template that declares how that component renders. You define this template either inline or by file path. Angular adds syntax elements that extend HTML so you can insert dynamic values from your component. Angular automatically updates the rendered DOM when your component's state changes. One application of this feature is inserting dynamic text, as shown in the following example.
+```
+<p>{{ message }}</p>
+```
+The value for message comes from the component class:
+```
+import { Component } from '@angular/core';
 
-- **Directives** - directives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.
+@Component ({
+  selector: 'hello-world-interpolation',
+  templateUrl: './hello-world-interpolation.component.html'
+})
+export class HelloWorldInterpolationComponent {
+    message = 'Hello, World!';
+}
+```
+When the application loads the component and its template, the user sees the following:
+```
+<p>Hello, World!</p>
+```
+Notice the use of double curly braces—they instruct Angular to interpolate the contents within them.
 
-- **Angular CLI** - the Angular CLI is the fastest, straightforward, and recommended way to develop Angular applications. The Angular CLI makes some tasks trouble-free. For example commands : ng build, ng serve, ng generate, ng test, ...
+**Dependency injection**
+
+Dependency injection lets you declare the dependencies of your TypeScript classes without taking care of their instantiation. Instead, Angular handles the instantiation for you. This design pattern lets you write more testable and flexible code. Understanding dependency injection is not critical to start using Angular, but it is strongly recommended as a best practice. Many aspects of Angular take advantage of it to some degree. To illustrate how dependency injection works, consider the following example. The first file, logger.service.ts, defines a Logger class. This class contains a writeCount function that logs a number to the console.
+```
+import { Injectable } from '@angular/core';
+
+@Injectable({providedIn: 'root'})
+export class Logger {
+  writeCount(count: number) {
+    console.warn(count);
+  }
+}
+```
+Next, the hello-world-di.component.ts file defines an Angular component. This component contains a button that uses the writeCount function of the Logger class. To access that function, the Logger service is injected into the HelloWorldDI class by adding private logger: Logger to the constructor.
+```
+import { Component } from '@angular/core';
+import { Logger } from '../logger.service';
+
+@Component({
+  selector: 'hello-world-di',
+  templateUrl: './hello-world-di.component.html'
+})
+export class HelloWorldDependencyInjectionComponent  {
+  count = 0;
+  constructor(private logger: Logger) { }
+  onLogMe() {
+    this.logger.writeCount(this.count);
+    this.count++;
+  }
+}
+```
+
+**Directives**
+
+Directives are classes that add additional behavior to elements in your Angular applications. Use Angular's built-in directives to manage forms, lists, styles, and what users see.
+
+**Angular CLI**
+
+The Angular CLI is the fastest, straightforward, and recommended way to develop Angular applications. The Angular CLI makes some tasks trouble-free. For example commands:
+
+- ng build - Compiles an Angular application into an output directory.
+- ng serve - Builds and serves your application, rebuilding on file changes.
+- ng generate -	Generates or modifies files based on a schematic.
+- ng test -	Runs unit tests on a given project.
+- ng e2e -	Builds and serves an Angular application, then runs end-to-end tests.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.5.
 
