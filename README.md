@@ -191,6 +191,20 @@ Following is the sequence of events corresponding to an incoming HTTP request to
 
 All the above-mentioned components, i.e. HandlerMapping, Controller, and ViewResolver are parts of WebApplicationContext which is an extension of the plainApplicationContext with some extra features necessary for web applications
 
+**@CrossOrigin(origins = "*")**
+
+For security reasons, browsers prohibit AJAX calls to resources residing outside the current origin. For example, as you're checking your bank account in one tab, you could have the evil.com website in another tab. The scripts from evil.com shouldn’t be able to make AJAX requests to your bank API (withdrawing money from your account!) using your credentials.
+
+Cross-origin resource sharing (CORS) is a W3C specification implemented by most browsers that allows you to specify in a flexible way what kind of cross domain requests are authorized, instead of using some less secured and less powerful hacks like IFrame or JSONP.
+
+
+Controller method CORS configuration
+You can add to your @RequestMapping annotated handler method a @CrossOrigin annotation in order to enable CORS on it (by default @CrossOrigin allows all origins and the HTTP methods specified in the @RequestMapping annotation):
+
+1. @CrossOrigin annotation
+2. JavaConfig, WebConfig, WebMvcConfigurer, Class bean
+3. SpringMVC XML configuration namespace
+
 ## Spring Boot
 
 In Simple Terminology, Spring Boot is nothing but existing Spring Framework + Some Embedded HTTP Servers (Tomcat/Jetty, etc.) - XML or Annotations Configurations. Here minus means we don’t need to write any XML Configuration and few Annotations only.
