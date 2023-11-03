@@ -11,7 +11,7 @@ A Spring and Angular based Expense Tracker Web App
 **Developer Tools**: IntelliJ IDEA, npm, Maven, AWS, Git/Github
 
 
-<img src="expense-tracker-frontend/src/assets/angular-springboot-mysql.png" width="600" height="450"/>
+<img src="expense-tracker-frontend/src/assets/angular-springboot-mysql.png" width="600" height="490"/>
 
 
 ## Angular
@@ -56,6 +56,8 @@ The class HttpClient Performs HTTP ***requests***. This service is available as 
 **Spring**
 
 The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.
+
+<img src="expense-tracker-frontend/src/assets/spring-overview.png" width="600" height="450"/>
 
 **Spring Web MVC**
 
