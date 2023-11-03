@@ -197,9 +197,8 @@ For security reasons, browsers prohibit AJAX calls to resources residing outside
 
 Cross-origin resource sharing (CORS) is a W3C specification implemented by most browsers that allows you to specify in a flexible way what kind of cross domain requests are authorized, instead of using some less secured and less powerful hacks like IFrame or JSONP.
 
-
 Controller method CORS configuration
-You can add to your @RequestMapping annotated handler method a @CrossOrigin annotation in order to enable CORS on it (by default @CrossOrigin allows all origins and the HTTP methods specified in the @RequestMapping annotation):
+You can add to your @RequestMapping annotated handler method a @CrossOrigin annotation in order to enable CORS on it (by default @CrossOrigin allows all origins and the HTTP methods specified in the @RequestMapping annotation).
 
 1. @CrossOrigin annotation
 2. JavaConfig, WebConfig, WebMvcConfigurer, Class bean
