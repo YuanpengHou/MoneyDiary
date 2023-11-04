@@ -195,6 +195,8 @@ All the above-mentioned components, i.e. HandlerMapping, Controller, and ViewRes
 
 For security reasons, browsers prohibit AJAX calls to resources residing outside the current origin. For example, as you're checking your bank account in one tab, you could have the evil.com website in another tab. The scripts from evil.com shouldn’t be able to make AJAX requests to your bank API (withdrawing money from your account!) using your credentials.
 
+Procotal; Domain Name; Port
+
 Cross-origin resource sharing (CORS) is a W3C specification implemented by most browsers that allows you to specify in a flexible way what kind of cross domain requests are authorized, instead of using some less secured and less powerful hacks like IFrame or JSONP.
 
 Controller method CORS configuration
@@ -312,6 +314,15 @@ Some of the most popular MySQL GUIs are MySQL WorkBench, SequelPro, DBVisualizer
 - Because MySQL databases have a schema, they are vulnerable to SQL injection attacks.
 - MySQL databases have a predefined structure. Changing the structure later can be costly.
 - Working with rows and columns is more complicated than working with JSON documents.
+
+
+## AWS
+
+Deploying the MoneyDiary app to AWS involved several steps. First, I prepared the application for deployment by packaging it using Maven. Then, I set up the required infrastructure on AWS, including creating an EC2 instance or using Elastic Beanstalk. I configured the MySQL database on Amazon RDS. Finally, I deployed the packaged app to the EC2 instance or Elastic Beanstalk, ensuring that it could handle incoming requests and interact with the database on AWS.
+
+
+## Potential Improvment
+
 
 
 # Angular 9, Spring boot and MySQL Web Applicaton - Expense Tracker
