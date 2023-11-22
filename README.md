@@ -26,6 +26,7 @@ With Angular, you're taking advantage of a platform that can scale from single-d
 <img src="expense-tracker-frontend/src/assets/0-readme.webp" width="750" height="450"/>
 
 **Components**
+
 Components are the building blocks that compose an application. A component includes a TypeScript class with a ```@Component()``` decorator, an HTML template, and styles. The ```@Component()``` decorator specifies the following Angular-specific information:
   1. A CSS selector that defines how the component is used in a template. HTML elements in your template that match this selector become instances of the component.
   2. An HTML template that instructs Angular how to render the component
@@ -146,6 +147,10 @@ The class HttpClient Performs HTTP ***requests***. This service is available as 
 
 The Spring Framework provides a comprehensive programming and configuration model for modern Java-based enterprise applications - on any kind of deployment platform.
 
+**Design Pattern**
+
+Bean production: Singleton, Factory
+
 <img src="expense-tracker-frontend/src/assets/spring-overview.png" width="600" height="450"/>
 
 **Spring Web MVC**
@@ -190,6 +195,10 @@ Following is the sequence of events corresponding to an incoming HTTP request to
 <img src="expense-tracker-frontend/src/assets/spring_dispatcherservlet.png" width="400"/>
 
 All the above-mentioned components, i.e. HandlerMapping, Controller, and ViewResolver are parts of WebApplicationContext which is an extension of the plainApplicationContext with some extra features necessary for web applications
+
+**Design Pattern**
+
+Spring MVC Interceptor: Chain of responsibility pattern
 
 **@CrossOrigin(origins = "*")**
 
