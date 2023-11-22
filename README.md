@@ -206,6 +206,8 @@ You can add to your @RequestMapping annotated handler method a @CrossOrigin anno
 2. JavaConfig, WebConfig, WebMvcConfigurer, Class bean
 3. SpringMVC XML configuration namespace
 
+https://cloud.tencent.com/developer/article/1924258
+
 ## Spring Boot
 
 In Simple Terminology, Spring Boot is nothing but existing Spring Framework + Some Embedded HTTP Servers (Tomcat/Jetty, etc.) - XML or Annotations Configurations. Here minus means we don’t need to write any XML Configuration and few Annotations only.
