@@ -309,22 +309,22 @@ Some of the most popular MySQL GUIs are MySQL WorkBench, SequelPro, DBVisualizer
 
 - Faster Query Processing: Large amount of data is retrieved quickly and efficiently. Operations like Insertion, deletion, manipulation of data is also done in almost no time. 
 - No Coding Skills: For data retrieval, large number of lines of code is not required. All basic keywords such as SELECT, INSERT INTO, UPDATE, etc are used and also the syntactical rules are not complex in SQL, which makes it a user-friendly language. 
-- Standardized Language: Due to documentation and long establishment over years, it provides a uniform platform worldwide to all its users. 
+- **Standardized Language**: Due to documentation and long establishment over years, it provides a uniform platform worldwide to all its users. 
 - Portable: It can be used in programs in PCs, server, laptops independent of any platform (Operating System, etc). Also, it can be embedded with other applications as per need/requirement/use. 
 - Interactive Language: Easy to learn and understand, answers to complex queries can be received in seconds. 
 - Scalability: SQL databases can handle large volumes of data and can be scaled up or down as per the requirements of the application.
-- Security: SQL databases have built-in security features that help protect data from unauthorized access, such as user authentication, encryption, and access control.
-- Data Integrity: SQL databases enforce data integrity by enforcing constraints such as unique keys, primary keys, and foreign keys, which help prevent data duplication and maintain data accuracy.
+- **Security**: SQL databases have built-in security features that help protect data from unauthorized access, such as user authentication, encryption, and access control.
+- **Data Integrity**: SQL databases enforce data integrity by enforcing constraints such as unique keys, primary keys, and foreign keys, which help prevent data duplication and maintain data accuracy.
 - Backup and Recovery: SQL databases have built-in backup and recovery tools that help recover data in case of system failures, crashes, or other disasters.
-- Data Consistency: SQL databases ensure consistency of data across multiple tables through the use of transactions, which ensure that changes made to one table are reflected in all related tables.
+- **Data Consistency**: SQL databases ensure consistency of data across multiple tables through the use of transactions, which ensure that changes made to one table are reflected in all related tables.
 
 **Drawbacks of MySQL**
 
-- MySQL is not efficient when it comes to large databases.
+- **MySQL is not efficient when it comes to large databases**.
 - MySQL has performance issues when scaling databases.
 - Because MySQL databases have a schema, they are vulnerable to SQL injection attacks.
-- MySQL databases have a predefined structure. Changing the structure later can be costly.
-- Working with rows and columns is more complicated than working with JSON documents.
+- **MySQL databases have a predefined structure. Changing the structure later can be costly**.
+- **Working with rows and columns is more complicated than working with JSON documents**.
 
 ## Test
 
