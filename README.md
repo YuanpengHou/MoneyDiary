@@ -14,6 +14,8 @@ A Spring and Angular based Expense Tracker Web App
 <img src="expense-tracker-frontend/src/assets/angular-springboot-mysql.png" width="600" height="490"/>
 
 
+Frontend/View/视图层 -> Server.js/Backend/服务端 -> Route.js/路由 -> Controller.js/控制层 -> Mongoose/DTO/持久层 -> Mondel/Entity/Object/Data/模型层/实体层/数据层
+
 ## Angular
 
 Angular is a development platform, built on TypeScript. As a platform, Angular includes:
